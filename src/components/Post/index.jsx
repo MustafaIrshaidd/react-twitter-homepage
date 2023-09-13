@@ -11,7 +11,16 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 
-const Post = ({name,userName,postDate,content,commentsCount,likesCount,retweetsCount,statisticsCount}) => {
+const Post = ({
+  name,
+  userName,
+  postDate,
+  content,
+  commentsCount,
+  likesCount,
+  retweetsCount,
+  statisticsCount,
+}) => {
   return (
     <Card sx={{ display: "flex", padding: "20px 20px" }}>
       <Avatar alt="Remy Sharp" src="/assets/images/personalPhoto.jpeg" />
