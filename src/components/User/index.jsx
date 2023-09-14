@@ -7,6 +7,7 @@ import { Avatar } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Button from "@mui/material/Button";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 const button = createTheme({
   typography: {
@@ -16,7 +17,7 @@ const button = createTheme({
   },
 });
 
-const User = ({ name, userName, bio, isVerfied }) => {
+const User = ({ name, userName, bio, isVerfied, isProfile = false }) => {
   return (
     <Card sx={{ display: "flex", padding: "20px 20px" }}>
       <Avatar alt="Remy Sharp" src="/assets/images/personalPhoto.jpeg" />
@@ -58,17 +59,21 @@ const User = ({ name, userName, bio, isVerfied }) => {
                 color="text.secondary"
                 variant="caption"></Typography>
             </Box>
-            <ThemeProvider theme={button}>
-              <Button
-                variant="contained"
-                sx={{
-                  maxHeight: "40px",
-                  minWidth: "70px",
-                  borderRadius: "30px",
-                }}>
-                Follow
-              </Button>
-            </ThemeProvider>
+            {isProfile ? (
+              <MoreHorizIcon />
+            ) : (
+              <ThemeProvider theme={button}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    maxHeight: "40px",
+                    minWidth: "70px",
+                    borderRadius: "30px",
+                  }}>
+                  Follow
+                </Button>
+              </ThemeProvider>
+            )}
           </Box>
           <Typography variant="body2" color="text.primary" component="div">
             {bio}
