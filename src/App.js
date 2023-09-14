@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import User from "./components/User";
 
@@ -22,6 +23,8 @@ function App() {
           "We're a community of millions of people who are building new skills and getting new jobs together."
         }
         isVerfied={true}></User>
+
+        <Navbar/>
     </>
   );
 }
