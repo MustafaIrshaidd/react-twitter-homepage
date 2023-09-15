@@ -1,4 +1,5 @@
 import "./App.css";
+import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import User from "./components/User";
@@ -6,7 +7,7 @@ import User from "./components/User";
 function App() {
   return (
     <>
-      <Post
+      {/* <Post
         name={"danabramov.bsky.social"}
         userName={"@dan_abramov"}
         postDate={"29 May"}
@@ -24,7 +25,8 @@ function App() {
         }
         isVerfied={true}></User>
 
-        <Navbar/>
+        <Navbar/> */}
+        <Main/>
     </>
   );
 }
