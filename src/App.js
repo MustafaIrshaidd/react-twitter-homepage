@@ -1,8 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
-import Navbar from "./components/Navbar";
-import Post from "./components/Post";
-import User from "./components/User";
+
 
 function App() {
   return (
@@ -26,7 +24,7 @@ function App() {
         isVerfied={true}></User>
 
         <Navbar/> */}
-        <Main/>
+      <Main />
     </>
   );
 }

@@ -22,7 +22,7 @@ const Post = ({
   statisticsCount,
 }) => {
   return (
-    <Card sx={{ display: "flex", padding: "20px 20px" }}>
+    <Card sx={{ display: "flex", padding: "20px 20px", width: "100%" }}>
       <Avatar alt="Remy Sharp" src="/assets/images/personalPhoto.jpeg" />
       <Box sx={{ display: "flex", flexDirection: "column" }} width={"100%"}>
         <CardContent sx={{ flex: "1 0 auto", paddingTop: "0px" }}>
